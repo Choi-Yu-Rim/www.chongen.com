@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="www.chongen.com:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>www.chongen.com</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="www.chongen.com.war">
+      <element id="artifact" artifact-name="www.chongen.com:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,13 +1,33 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="www.chongen.com:war exploded">
-    <output-path>$PROJECT_DIR$/out/artifacts/www_chongen_com_war_exploded</output-path>
+    <output-path>$PROJECT_DIR$/target/www.chongen.com</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>www.chongen.com</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
     <root id="root">
-      <element id="javaee-facet-resources" facet="www.chongen.com/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="www.chongen.com" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Spring-5.2.3.RELEASE" />
+          <element id="library" level="project" name="Spring Batch-2.2.6" />
+          <element id="library" level="project" name="Spring Data JPA-2.2.4.RELEASE" />
+          <element id="library" level="project" name="Spring Integration-5.2.3.RELEASE" />
+          <element id="library" level="project" name="Spring MVC-5.2.3.RELEASE" />
+          <element id="library" level="project" name="Spring Security-5.2.1" />
+          <element id="library" level="project" name="Spring Web Services-2.0.2" />
+          <element id="library" level="project" name="Spring Webflow-2.4.0" />
+        </element>
       </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/www.chongen.com/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="www.chongen.com/web/Web" />
     </root>
   </artifact>
 </component>
